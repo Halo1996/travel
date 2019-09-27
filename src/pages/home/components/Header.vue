@@ -1,15 +1,14 @@
 <template>
   <div class="header">
-    <div class="left">
+    <div class="header-left">
+      <div class="iconfont back-icon">&#xe601;</div>
+    </div>
+    <div class="header-input">
+      <span class="iconfont">&#xe605;</span> 输入城市/景点/游玩/主题
+    </div>
+    <div class="header-right">
       北京
-      <span class="iconfont">&#xe606;</span>
-    </div>
-    <div class="input">
-      <img src="@/assets/images/search.png" class="search" />
-      <input type="text" placeholder="十一去哪玩呢？" class="text" />
-    </div>
-    <div class="right">
-      <div class="iconfontright">&#xe60d;</div>
+      <span class="iconfont arrow-icon">&#xe607;</span>
     </div>
   </div>
 </template>
@@ -18,58 +17,47 @@ export default {
   name: 'HomeHeader'
 }
 </script>
-<style scoped>
+<style lang="stylus" scoped>
+// 使用@代替src 在css中引入前面要加一个~
+@import '~styles/varibles.styl';
+
 .header {
+  line-height: 0.86rem;
+  background-color: $bgColor;
   display: flex;
-  line-height: 86px;
   color: #fff;
-}
-.left {
-  width: 124px;
-  float: left;
-  font-size: 24px;
-  text-align: center;
-}
-.input {
-  /*  flex 是 flex-grow、flex-shrink、flex-basis的缩写。 
-      flex:1;的值是1 1 0% 
-      flex-grow:：当父控件还有剩余空间的时候，是否进行放大(grow)其中数值代表的是放大比例，值为0的时候表示不放大；
 
-      flex-shrink：当父控件空间不够的时候，是否进行缩小(shrink)其中数值代表的是与控件大小有关的缩小比例；
+  .header-left {
+    width: 0.64rem;
+    float: left;
 
-      flex-basis：当子空间含有这个属性的时候，代表了子空间占主轴的大小，主轴就是flex的主方向row是横向，column是竖向；
-      */
-  flex: 1;
-  height: 64px;
-  line-height: 64px;
-  font-size: 34px;
-  border-radius: 30px;
-  margin: 12px 10px;
-  color: #ccc;
-  background-color: #fff;
-  position: relative;
-}
-.text {
-  height: 54px;
-  line-height: 54px;
-  display: inline-block;
-  position: absolute;
-  top: 6px;
-}
-.search {
-  margin-left: 20px;
-  margin-top: 12px;
-  height: 40px;
-  width: 40px;
-}
-.iconfontright {
-  font-family: 'iconfont' !important;
-  font-size: 52px;
-  font-style: normal;
-  text-align: center;
-}
-.right {
-  width: 70px;
-  float: right;
+    .back-icon {
+      text-align: center;
+      font-size: 0.4rem;
+    }
+  }
+
+  .header-input {
+    flex: 1;
+    height: 0.64rem;
+    line-height: 0.64rem;
+    margin-top: 0.12rem;
+    margin-left: 0.2rem;
+    padding-left: 0.2rem;
+    background-color: #fff;
+    border-radius: 0.1rem;
+    color: #ccc;
+  }
+
+  .header-right {
+    width: 1.24rem;
+    float: right;
+    text-align: center;
+
+    .arrow-icon {
+      margin-left: -0.04rem;
+      font-size: 0.24rem;
+    }
+  }
 }
 </style>
