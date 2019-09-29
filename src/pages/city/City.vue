@@ -2,29 +2,23 @@
   <div>
     <city-header></city-header>
     <city-search></city-search>
-    <!--
-    <home-icons :iconList="iconList"></home-icons>
-    <home-recommend :recommendList="recommendList"></home-recommend>
-    <home-weekend :weekendList="weekendList"></home-weekend>-->
+    <city-list></city-list>
+    <city-alphabet></city-alphabet>
   </div>
 </template>
 <script>
 import CityHeader from './components/Header'
 import CitySearch from './components/Search'
-// import HomeSwiper from './components/Swiper'
-// import HomeIcons from './components/Icons'
-// import HomeRecommend from './components/Recommend'
-// import HomeWeekend from './components/Weekend'
+import CityList from './components/List'
+import CityAlphabet from './components/Alphabet'
 import axios from 'axios'
 export default {
   name: 'City',
   components: {
     CityHeader,
-    CitySearch
-    // HomeSwiper,
-    // HomeIcons,
-    // HomeRecommend,
-    // HomeWeekend
+    CitySearch,
+    CityList,
+    CityAlphabet
   },
   data() {
     return {
