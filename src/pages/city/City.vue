@@ -1,7 +1,8 @@
 <template>
   <div>
     <city-header></city-header>
-    <!--<home-swiper :swiperList="swiperList"></home-swiper>
+    <city-search></city-search>
+    <!--
     <home-icons :iconList="iconList"></home-icons>
     <home-recommend :recommendList="recommendList"></home-recommend>
     <home-weekend :weekendList="weekendList"></home-weekend>-->
@@ -9,6 +10,7 @@
 </template>
 <script>
 import CityHeader from './components/Header'
+import CitySearch from './components/Search'
 // import HomeSwiper from './components/Swiper'
 // import HomeIcons from './components/Icons'
 // import HomeRecommend from './components/Recommend'
@@ -17,7 +19,8 @@ import axios from 'axios'
 export default {
   name: 'City',
   components: {
-    CityHeader
+    CityHeader,
+    CitySearch
     // HomeSwiper,
     // HomeIcons,
     // HomeRecommend,
