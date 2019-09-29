@@ -11,23 +11,14 @@
 <script>
 export default {
   name: 'HomeSwiper',
+  props: {
+    swiperList: Array
+  },
   data() {
     return {
       swiperOption: {
         pagination: '.swiper-pagination'
-      },
-      swiperList: [
-        {
-          id: '0001',
-          imgUrl:
-            'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20199/afee1cdb430cdefc03eb66cc6ff93d27.jpg_750x200_78de585b.jpg'
-        },
-        {
-          id: '0002',
-          imgUrl:
-            'http://mp-piao-admincp.qunarzz.com/mp_piao_admin_mp_piao_admin/admin/20199/249dfa53de67b8824a96f9821e58f30d.jpg_750x200_48bf24d9.jpg'
-        }
-      ]
+      }
     }
   }
 }

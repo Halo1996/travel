@@ -7,6 +7,7 @@ import router from './router'
 import fastClick from 'fastclick'
 import 'styles/reset.css'
 import 'styles/border.css'
+
 // 引入iconfont
 import 'styles/iconfont.css'
 // 轮播图插件
@@ -22,6 +23,7 @@ Vue.use(VueAwesomeSwiper)
 new Vue({
   el: '#app',
   router,
+
   components: { App },
   template: '<App/>'
 })
