@@ -9,11 +9,11 @@ export default new Vuex.Store({
   state,
   mutations,
   // 类似computed
-  getters: {
-    doubleCity(state) {
-      return state.city + ' ' + state.city
-    }
-  }
+  // getters: {
+  //   doubleCity(state) {
+  //     return state.city + ' ' + state.city
+  //   }
+  // }
   // actions: {
   //   changeCity(ctx, city) {
   //     ctx.commit('changeCity', city)
