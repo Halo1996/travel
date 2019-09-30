@@ -3,7 +3,7 @@
   <div id="app">
     <!-- <img src="./assets/logo.png" /> -->
     <!-- 显示的是当前路由地址显示的内容 -->
-    <keep-alive>
+    <keep-alive exclude="Detail">
       <router-view />
     </keep-alive>
   </div>

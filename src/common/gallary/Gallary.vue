@@ -55,7 +55,6 @@ export default {
   .wrapper {
     background-color: #fff;
     width: 100%;
-    height: 5.14rem;
 
     .gallery-img {
       width: 100%;
