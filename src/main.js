@@ -3,6 +3,7 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store'
 // 引入 fastclick 解决移动端300毫秒延迟问题
 import fastClick from 'fastclick'
 import 'styles/reset.css'
@@ -23,7 +24,7 @@ Vue.use(VueAwesomeSwiper)
 new Vue({
   el: '#app',
   router,
-
+  store,
   components: { App },
   template: '<App/>'
 })
