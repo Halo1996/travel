@@ -8,7 +8,8 @@ import store from './store'
 import fastClick from 'fastclick'
 import 'styles/reset.css'
 import 'styles/border.css'
-
+// 解决手机白屏问题
+import 'babel-polyfill'
 // 引入iconfont
 import 'styles/iconfont.css'
 // 轮播图插件
